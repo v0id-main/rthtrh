@@ -15,14 +15,14 @@ import os
 import json
 import asyncio
 
+
+
 media_count = 0
 
 with open("config.json", encoding="utf-8") as file:
     cfg = json.load(file)
     api_id = cfg["api_id"]
     api_hash = cfg["api_hash"]
-
-# заказчик пидор
 
 
 def downloader(total_chats, exts, output_folder):
